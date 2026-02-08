@@ -5,29 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-                foto login
+                
             </div>
             <div id="formulario">
-                <H1>Login</H1>
-                <p>Seja bem-vindo!</p>
-                <fieldset>
-                    <form action="cadastro.php" method="post">
+                
+                <H1>Login <img id="menu" src="imagens/login.png" alt=""></H1>
+                <p><strong>Seja bem-vindo!</strong></p>
+                    <form action="cadastro.php" method="post" autocomplete="on">
                     
-                        <label for="iemail">Email:</label>
-                        <input type="email" name="email" id="iemail" required placeholder="Digite seu email">
+                        <div class="campo">
 
-                        <br>
-                        
-                       <label for="isenha">Senha:</label>
-                        <input type="password" name="senha" id="isenha" required placeholder="Digite sua senha">
+                            <img src="imagens/user.png" alt="person">
+                            <input type="email" name="email" id="iemail" required placeholder="Digite seu email" autocomplete="email">
+                            <label for="iemail"></label>
+
+                        </div>
+                       <div class="campo">
+
+                            <img src="imagens/padlock.png" alt="senha">
+                            <input type="password" name="senha" id="isenha" required placeholder="Digite sua senha">
+                              <label for="isenha"></label>
+
+                       </div>
+                       <input type="submit" value="Entrar">
+                       <input type="reset" value="Esqueci Minha Senha">
                     
                     </form>
-                </fieldset>
             </div>
         </section>
     </main>
